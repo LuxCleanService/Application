@@ -1,0 +1,62 @@
+.container {
+  padding: 0 160px; /* Space on left and right */
+  margin-top: 20px;
+}
+
+.customer-reviews {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative; /* Position for arrow buttons */
+}
+
+.heading {
+  color: #364f6b;
+  text-align: center;
+}
+
+.carousel {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px; /* Space between reviews */
+  overflow: hidden; /* Hide the overflow */
+}
+
+.review {
+  flex: 0 0 calc(33.33% - 20px); /* Each review takes up one-third of the container width */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.5s ease;
+}
+
+.customer-name {
+  font-weight: bold;
+  color: #fc5185;
+}
+
+.customer-feedback {
+  color: #000;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fc5185;
+  color: #364f6b;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons appear above reviews */
+}
+
+.prev-btn {
+  left: 20px; /* Adjust position */
+}
+
+.next-btn {
+  right: 20px; /* Adjust position */
+}
